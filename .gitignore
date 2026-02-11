@@ -1,0 +1,43 @@
+# Virtual environment
+venv/
+ENV/
+env/
+
+# Environment variables
+.env
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Logs
+*.log
+logs/
+
+# Database
+*.db
+*.sqlite3
+
+# Uploads / generated files
+jobs/
+uploads/
+output/
+*.mp4
+*.wav
+*.ass
+*.srt
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Build
+build/
+dist/
+*.egg-info/
