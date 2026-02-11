@@ -24,7 +24,7 @@ def process_job(job_id:str):
     
     extract_audio(video_path, audio_path)
 
-    transcribe_audio(audio_path,transcript_path)
+    transcribe_audio(audio_path,transcript_path,"Hi")
 
     return {
         "job_id": job_id,

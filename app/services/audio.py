@@ -10,7 +10,7 @@ def extract_audio(video_path: str, audio_path: str):
         "ffmpeg",
         "-y",
         "-i", video_path,
-        "-ar", "1600",
+        "-ar", "16000",
         "-ac", "1",
         audio_path
     ]

@@ -3,18 +3,14 @@ import json
 
 model = whisper.load_model("small")
 
-def transcribe_audio(audio_path: str, audio_text_json_path: str):
+def transcribe_audio(audio_path: str, audio_text_json_path: str,video_language: str):
 
     result = model.transcribe(
         audio_path,         
         task="transcribe",
+        # language=video_language,
         temperature=0.0,
-        beam_size=5,
-        initial_prompt=(
-            "This audio contains Hinglish speech "
-            "(Hindi and English mixed). "
-            "Use correct words."
-        )
+        beam_size=5
     )
 
     segments =[]
