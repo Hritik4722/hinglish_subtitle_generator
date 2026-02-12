@@ -3,6 +3,7 @@ from fastapi import APIRouter, HTTPException
 
 from app.services.audio import extract_audio
 from app.services.whisper_stt import transcribe_audio
+from app.services.sarvam_stt import sarvam_stt
 
 router = APIRouter()
 
@@ -24,7 +25,8 @@ def process_job(job_id:str):
     
     extract_audio(video_path, audio_path)
 
-    transcribe_audio(audio_path,transcript_path,"Hi")
+    # transcribe_audio(audio_path,transcript_path,"Hi")
+    sarvam_stt(audio_path,transcript_path,"hi-IN")
 
     return {
         "job_id": job_id,
