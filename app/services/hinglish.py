@@ -37,11 +37,7 @@ def convert_hinglish(segments):
         Do NOT add explanations.
         Do not add markdown.
         Do not explain.
-                
-    """
-
- 
-
+     """
     response = client.models.generate_content(
         model=MODEL_NAME,
         contents=prompt,
