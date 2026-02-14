@@ -8,7 +8,7 @@ def transcribe_audio(audio_path: str, audio_text_json_path: str,video_language: 
     result = model.transcribe(
         audio_path,         
         task="transcribe",
-        # language=video_language,
+        language=video_language,
         temperature=0.0,
         beam_size=5
     )

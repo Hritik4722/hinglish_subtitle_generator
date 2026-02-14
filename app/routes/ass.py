@@ -28,7 +28,7 @@ def generate_ass_file(job_id: str):
 
     width, height = get_video_resolution(video_path)
 
-    style_name = "reels"
+    style_name = "minimal"
 
     style_path = os.path.join("app", "styles", f"{style_name}.json")
 

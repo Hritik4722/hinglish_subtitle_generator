@@ -25,7 +25,7 @@ def process_job(job_id:str):
     
     extract_audio(video_path, audio_path)
 
-    transcribe_audio(audio_path,transcript_path,"Hi")
+    transcribe_audio(audio_path,transcript_path,"hi")
     # sarvam_stt(audio_path,transcript_path,"hi-IN")
 
     return {
