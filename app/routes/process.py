@@ -5,7 +5,7 @@ from app.services.audio import extract_audio
 from app.services.whisper_stt import transcribe_audio
 # from app.services.sarvam_stt import sarvam_stt
 
-router = APIRouter()
+router = APIRouter(tags=["Extract audio & Subtitle generator"])
 
 JOBS_DIR = "jobs"
 

@@ -3,7 +3,7 @@ import json
 from fastapi import APIRouter,HTTPException
 from app.services.hinglish import convert_hinglish
 
-router = APIRouter(prefix="/cleanup", tags=["Cleanup"])
+router = APIRouter(prefix="/cleanup", tags=["Cleanup & Hinglish converter"])
 
 JOBS_DIR = "jobs"
 
