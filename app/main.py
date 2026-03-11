@@ -10,12 +10,12 @@ from app.routes.full_pipline import router as pipeline_router
 app = FastAPI(title="Subtitle Generator")
 
 app.include_router(upload_router)
+app.include_router(pipeline_router)
 app.include_router(process_router)
 app.include_router(hinglish_router)
 app.include_router(segment_router)
 app.include_router(ass_router)
 app.include_router(render_router)
-app.include_router(pipeline_router)
 
 @app.get("/")
 def root():
